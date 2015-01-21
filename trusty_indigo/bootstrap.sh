@@ -9,3 +9,4 @@ wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo 
 sudo apt-get update
 sudo apt-get install -y ros-indigo-desktop-full
 sudo apt-get install -y python-rosinstall 
+sudo apt-get install -y gitg vim meld 
