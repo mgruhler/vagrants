@@ -10,3 +10,5 @@ sudo apt-get update
 sudo apt-get install -y ros-indigo-desktop-full
 sudo apt-get install -y python-rosinstall 
 sudo apt-get install -y gitg vim meld terminator
+sudo rosdep init
+sudo reboot
