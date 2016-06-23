@@ -7,8 +7,8 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
  # Every Vagrant virtual environment requires a box to build off of.
  # config.vm.box = "ubuntu/xenial64"
- # Try with the bento box, this should contain a fix for the networking issue (ethX not existing anymore due to new naming scheme)
-  config.vm.box = "bento/ubuntu-16.04"
+ # Try with another box, this should contain a fix for the networking issue (ethX not existing anymore due to new naming scheme)
+  config.vm.box = "gbarbieru/xenial"
 
   config.vm.provider "virtualbox" do |vb|
     # Don't boot with headless mode
