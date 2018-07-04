@@ -6,7 +6,9 @@ Contains some vagrant configuration for different development environments.
 * **14.04_trusty_indigo_i386**: vagrant with Ubuntu 14.04 (Trusty) 32bit and bootstrapped to install with unity desktop and ROS Indigo (ros-indigo-desktop-full)
 * **14.04_trusty_indigo_amd64**: vagrant with Ubuntu 14.04 (Trusty) 64bit and bootstrapped to install with unity desktop and ROS Indigo (ros-indigo-desktop-full)
 * **16.04_xenial_kinetic_amd64**: vagrant with Ubuntu 16.04 (Xenial) 64bit and bootstrapped to install with unity desktop and ROS Kinetic (ros-kinetic-desktop-full)
-* **14.04_trusty_indigo_amd64**: vagrant with Ubuntu 14.04 (Trusty) 64bit and bootstrapped to install with unity desktop and ROS Indigo (ros-indigo-desktop-full)
+* **18.04_bionic_melodic_amd64**: vagrant with Ubuntu 18.04 (Bionic) 64bit and bootstrapped to install with Gnome desktop and ROS Melodic (ros-melodic-ros-base), as well as catkin_lint and catkin_tools
+
+See the respective `bootstrap.sh` which pacakges are actually installed.
 
 
 ## Usage
@@ -22,10 +24,16 @@ To use the availabe vagrant boxes, follow the following steps:
 1. To use this repo, you need to install Vagrant.
 
   ```bash
-  apt install vagrant
+  sudo apt install vagrant
   ```
 
 1. Next, install Virtualbox, see [here](https://www.virtualbox.org/wiki/Linux_Downloads) or [here](https://wiki.ubuntuusers.de/VirtualBox/Installation/).
+
+  ```
+  sudo apt install virtualbox virtualbox-dkms virtualbox-guest-additions-installation
+  sudo adduser $USER vboxusers
+  newgrp - vboxusers
+  ```
 
 ## possible issues
 - After the bootstrap process, you might have to manually call 'sudo apt-get install -f' to install hddtemp correctly, as it requires interaction, to complete the installation correctly. (Encountered on `precise_hydro`)
