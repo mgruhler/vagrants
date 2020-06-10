@@ -1,0 +1,3 @@
+[submodule "fossology"]
+	path = fossology
+	url = https://github.com/fossology/fossology

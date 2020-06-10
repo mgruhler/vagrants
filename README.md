@@ -3,10 +3,13 @@ Contains some vagrant configuration for different development environments.
 
 ## Available vagrant configurations
 * **16.04_xenial_kinetic_amd64**: vagrant with Ubuntu 16.04 (Xenial) 64bit and bootstrapped to install with unity desktop and ROS Kinetic (ros-kinetic-desktop-full)
-* **18.04_bionic_melodic_amd64**: vagrant with Ubuntu 18.04 (Bionic) 64bit and bootstrapped to install with Gnome desktop and ROS Melodic (ros-melodic-ros-base), as well as catkin_lint and catkin_tools
+* **18.04_bionic_melodic_amd64**: vagrant with Ubuntu 18.04 (Bionic) 64bit and bootstrapped to install with Gnome desktop and ROS Melodic (ros-melodic-ros-base), as well as `catkin_lint` and `catkin_tools`
 
-See the respective `bootstrap.sh` which pacakges are actually installed.
+See the respective `bootstrap.sh` which paackges are actually installed.
 
+
+## Third Party Vagrants
+* **FOSSology**: integrated as a submodule.
 
 ## Usage
 For more in-depth information, see the [Vagrant Homepage](https://www.vagrantup.com/).
@@ -33,5 +36,5 @@ To use the availabe vagrant boxes, follow the following steps:
   ```
 
 ## possible issues
-- After the bootstrap process, you might have to manually call 'sudo apt-get install -f' to install hddtemp correctly, as it requires interaction, to complete the installation correctly. (Encountered on `precise_hydro`)
+- After the bootstrap process, you might have to manually call 'sudo apt-get install -f' to install hddtemp correctly, as it requires interaction, to complete the installation correctly. (Encountered on deprecated `precise_hydro` container)
 - the bootstrap process might not work in one go, you might need to `vagrant halt` the box and do another `vagrant up --provision` run.
