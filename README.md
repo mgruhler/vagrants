@@ -2,10 +2,11 @@
 Contains some vagrant configuration for different development environments.
 
 ## Available vagrant configurations
-* **16.04_xenial_kinetic_amd64**: vagrant with Ubuntu 16.04 (Xenial) 64bit and bootstrapped to install with unity desktop and ROS Kinetic (ros-kinetic-desktop-full)
-* **18.04_bionic_melodic_amd64**: vagrant with Ubuntu 18.04 (Bionic) 64bit and bootstrapped to install with Gnome desktop and ROS Melodic (ros-melodic-ros-base), as well as `catkin_lint` and `catkin_tools`
+* **16.04_xenial_kinetic_amd64**: vagrant with Ubuntu 16.04 (Xenial) 64bit and bootstrapped to install with unity desktop and ROS Kinetic (`ros-kinetic-desktop-full`)
+* **18.04_bionic_melodic_amd64**: vagrant with Ubuntu 18.04 (Bionic) 64bit and bootstrapped to install with Gnome desktop and ROS Melodic (`ros-melodic-ros-base`), as well as `catkin_lint` and `catkin_tools`
+* **20.04_focal_noetic_amd64**: vagrant with Ubuntu 20.04 (Focal) 64bit and bootstrapped to install with Gnome desktop and ROS Noetic (`ros-noetic-ros-base`), as well as `catkin_lint` and `catkin_tools`
 
-See the respective `bootstrap.sh` which paackges are actually installed.
+See the respective `bootstrap.sh` for which packges (and obviously their dependencies) are actually installed.
 
 
 ## Third Party Vagrants
