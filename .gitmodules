@@ -1,3 +1,6 @@
 [submodule "fossology"]
 	path = fossology
 	url = https://github.com/fossology/fossology
+[submodule "sw360vagrant"]
+	path = sw360vagrant
+	url = git@github.com:sw360/sw360vagrant
