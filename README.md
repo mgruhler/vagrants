@@ -11,6 +11,7 @@ See the respective `bootstrap.sh` for which packges (and obviously their depende
 
 ## Third Party Vagrants
 * **FOSSology**: integrated as a submodule.
+* **SW360**: integrated as a submodule.
 
 ## Usage
 For more in-depth information, see the [Vagrant Homepage](https://www.vagrantup.com/).
